@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Canvas</title>
+    <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <h1>HTML Canvas element to create graphics using Javascript</h1>
+    <canvas id="canv"></canvas>
+    <script>
+      const canvas = document.getElementById("canv");
+      canvas.width = canvas.height = 100;
+      let ctx = canvas.getContext("2d");
+      ctx.fillStyle = "red";
+      ctx.fillRect(10, 10, 80, 80);
+    </script>
+  </body>
+</html>
