@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Helvetica, sans-serif;
+  max-width: 1440px;
+  background-color: #f0f4f5;
+  overflow: hidden;
+  margin: auto;
+}
+nav {
+  display: flex;
+  height: 15vh;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  list-style: none;
+  margin-right: 50px;
+  font-weight: 600;
+}
+nav ul li:first-child {
+  color: #5abb78;
+}
+/* hero section */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+}
+main section {
+  width: 50%;
+}
+/* left side */
+.lhs {
+  margin-left: 5%;
+  position: relative;
+}
+.top-angle {
+  width: 25px;
+}
+.lhs h1 {
+  font-size: 70px;
+}
+.lhs p {
+  font-size: 18px;
+  color: #808080;
+  margin: 20px 0;
+}
+.bottom-angle {
+  width: 25px;
+  position: absolute;
+  right: 0;
+}
+.stethoscope {
+  position: absolute;
+  top: -60px;
+  right: -25px;
+  width: 90%;
+  z-index: -1;
+}
+.mouse {
+  position: absolute;
+  right: -50px;
+  bottom: 0;
+  width: 30px;
+}
+.lhs button {
+  background-color: #258c46;
+  color: #ffffff;
+  padding: 15px 45px;
+  border: none;
+  border-radius: 40px;
+  font-size: 25px;
+}
+/* right side */
+.green-circle,
+.yellow-circle {
+  position: absolute;
+  right: 0;
+}
+.doctor {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  height: 90%;
+}
+.green-circle {
+  width: 35%;
+  bottom: 30px;
+}
+.yellow-circle {
+  width: 30%;
+  bottom: 50px;
+  left: 71%;
+}
