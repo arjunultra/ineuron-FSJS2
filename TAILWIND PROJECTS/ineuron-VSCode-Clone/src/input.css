@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom CSS */
+.editions {
+  position: relative;
+}
+.editions::after {
+  content: "";
+  width: 1.3rem;
+  height: 1.3rem;
+  display: block;
+  /* -webkit-transform: rotate(45deg); */
+  /* -ms-transform: rotate(45deg); */
+  transform: rotate(45deg);
+  background: #25252b;
+  position: absolute;
+  top: -0.7rem;
+  right: 1.45rem;
+}
+/* .value-prop-icon.intellisense {
+  background-position: 0 0;
+}
+.value-prop-icon.debugging {
+  background-position: -5.2rem 0;
+}
+.value-prop-icon.git {
+  background-position: -10.2rem 0;
+}
+.value-prop-icon.extensions-icon {
+  background-position: -5rem -5.2rem;
+} */
+/* Custom-Font */
+@font-face {
+  font-family: "My Custom Font";
+  src: url("../dist/assets/Segoe.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+.myfont {
+  font-family: "My Custom Font", "sans-serif";
+}
+.count {
+  position: relative;
+}
+.count::after {
+  content: "";
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  transform: rotate(-45deg);
+  border-width: 4px 4px 4px 0;
+  background: #fafafa;
+  position: absolute;
+  left: -4px;
+  border-style: solid;
+  border-color: transparent;
+}
