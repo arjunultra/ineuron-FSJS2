@@ -9,6 +9,7 @@ body {
 // Mobile - first design
 .wrapper {
   background-color: #151515;
+  padding-bottom: 4.2em;
 }
 nav {
   display: flex;
@@ -23,7 +24,6 @@ nav {
 }
 ul.menu {
   list-style: none;
-  display: flex;
   color: #ffffff;
   display: none;
   li {
@@ -47,6 +47,9 @@ svg.menu-open {
   top: 2.7em;
 }
 /* Hero - Section  */
+.herosec-container {
+  background-image: url("../Assets/backCards.png");
+}
 section.hero {
   margin-left: 2em;
 }
@@ -112,6 +115,31 @@ p.text-users {
   color: #ffffff;
   font-size: 2rem;
 }
+// Breakpoint - Tablet
+@media only screen and (min-width: 680px) {
+  .wrapper {
+    padding: 1.5em 5em;
+    font-family: "Poppins", sans-serif;
+  }
+  .menu-open {
+    display: none;
+  }
+  ul.menu {
+    list-style: none;
+    color: #ffffff;
+    display: flex;
+    li:first-child {
+      margin-left: 3em;
+    }
+    li {
+      margin-right: 3em;
+    }
+  }
+  nav {
+    align-items: baseline;
+  }
+}
+
 @keyframes fillRight {
   from {
     clip-path: circle(49.7% at 51% 100%);
