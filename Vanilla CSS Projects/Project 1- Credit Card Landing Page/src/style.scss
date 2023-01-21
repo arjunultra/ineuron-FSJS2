@@ -9,16 +9,20 @@ body {
 // Mobile - first design
 .wrapper {
   background-color: #151515;
-  padding-bottom: 4.2em;
+  padding-bottom: 4.1em;
 }
 nav {
   display: flex;
   flex-basis: auto;
   align-items: center;
   margin-bottom: 5em;
+  width: 100%;
+}
+.navbtn-container {
+  display: none;
 }
 .logo-img {
-  display: block;
+  display: flex;
   margin-top: 2em;
   margin-left: 2em;
 }
@@ -28,6 +32,7 @@ ul.menu {
   display: none;
   li {
     margin-right: 3em;
+    font-size: 1.2rem;
   }
 }
 .nav-btn {
@@ -52,6 +57,9 @@ svg.menu-open {
 }
 section.hero {
   margin-left: 2em;
+}
+div.heroimg-container {
+  display: none;
 }
 .hero h1 {
   font-size: 3rem;
@@ -121,6 +129,65 @@ p.text-users {
     padding: 1.5em 5em;
     font-family: "Poppins", sans-serif;
   }
+  div p.lang {
+    color: #ffffff;
+  }
+  .navbtn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 15em;
+    svg.caret {
+      margin-right: 3em;
+      margin-left: 1em;
+    }
+    .nav-button {
+      background-color: rgba(255, 255, 255, 0);
+      background-image: url("../Assets/btn-pink-bg.svg");
+      background-repeat: no-repeat;
+      background-position: center left;
+      background-size: 2.8em;
+      padding-left: 1.5em;
+      border: 0;
+      color: #ffffff;
+      text-transform: capitalize;
+      font-size: 0.9rem;
+      padding: 0.5em 1em;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+  .herosec-container {
+    background-image: none;
+    display: flex;
+    background-color: #151515;
+    section.hero {
+      width: 50%;
+    }
+    div.heroimg-container {
+      display: block;
+      width: 50%;
+      position: relative;
+      .reflection {
+        display: block;
+        position: absolute;
+        left: -15em;
+        width: 50vw;
+        z-index: 1;
+      }
+      .cards-img {
+        display: block;
+        width: 50vw;
+        z-index: 2;
+        position: absolute;
+        top: -1em;
+        left: -3em;
+      }
+    }
+  }
+  li img.hide-me {
+    display: none;
+  }
   .menu-open {
     display: none;
   }
@@ -135,8 +202,17 @@ p.text-users {
       margin-right: 3em;
     }
   }
-  nav {
-    align-items: baseline;
+  nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+  }
+  .logo-img {
+    display: block;
+    margin: 0;
+  }
+  .about-us {
+    width: 5em;
   }
 }
 

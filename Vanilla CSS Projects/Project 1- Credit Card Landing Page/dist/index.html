@@ -29,17 +29,22 @@
       <section class="wrapper">
         <header>
           <nav>
-            <div class="nav-logo">
-              <img class="logo-img" src="../Assets/Logo.svg" alt="logo" />
-            </div>
+            <img class="logo-img" src="../Assets/Logo.svg" alt="logo" />
             <ul class="menu">
+              <li>
+                <img
+                  class="hide-me logo-img"
+                  src="../Assets/Logo.svg"
+                  alt="logo"
+                />
+              </li>
               <li>Home</li>
               <li>Features</li>
               <li>Pricing</li>
-              <li>About us</li>
+              <li class="about-us">About us</li>
             </ul>
-            <div class="nav-btn">
-              En
+            <div class="navbtn-container">
+              <p class="lang">Eng</p>
               <span>
                 <svg
                   class="caret"
@@ -69,8 +74,8 @@
           </svg>
         </header>
         <div class="herosec-container">
+          <!-- Left Side -->
           <section class="hero">
-            <!-- Left Side -->
             <h1>Simplify All Transactions in <span>One Card</span></h1>
             <p class="desc">
               Hurry up and join now, with this you can manage your daily
@@ -93,20 +98,16 @@
                 <p class="text-users">Years of Experience</p>
               </div>
             </div>
-            <!-- right side -->
-            <!-- <div class="heroimg-container">
-              <img
-                class="reflection"
-                src="../Assets/backCards.png"
-                alt="reflection"
-              />
-              <img
-                class="cards-img"
-                src="../Assets/frontCards.png"
-                alt="cards"
-              />
-            </div> -->
           </section>
+          <!-- right side -->
+          <div class="heroimg-container">
+            <img
+              class="reflection"
+              src="../Assets/backCards.png"
+              alt="reflection"
+            />
+            <img class="cards-img" src="../Assets/frontCards.png" alt="cards" />
+          </div>
         </div>
       </section>
     </div>
