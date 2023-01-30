@@ -223,22 +223,48 @@ section.reviews {
     color: #ffffff;
     font-size: 3rem;
   }
-  p.country {
-    font-weight: lighter;
-    font-size: 1rem;
-  }
-  div.review-1 {
-    width: 30em;
-    height: 15em;
+}
+div.review-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  gap: 2em;
+  div.review-1,
+  div.review-2,
+  div.review-3,
+  div.review-4 {
+    padding: 2em;
+    padding-bottom: 0;
+    width: auto;
+    height: auto;
     background-color: #1e1f24;
     &:hover {
       background-color: #4f4c4b;
     }
   }
+  div.review-3 > p.country {
+    padding-bottom: 4em;
+  }
+  p.author {
+    padding-bottom: 0;
+  }
+  p.country {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.9rem;
+    font-weight: 100;
+  }
 }
 
 // Breakpoint - Tablet
 @media only screen and (min-width: 680px) {
+  p.text-users {
+    color: #ffffff;
+    text-align: justify;
+    width: 7em;
+    height: 3em;
+    word-spacing: 10em;
+  }
   .wrapper {
     padding: 1.5em 5em;
     font-family: "Poppins", sans-serif;
@@ -340,8 +366,13 @@ section.reviews {
     display: flex;
     gap: 2em;
   }
+  section.reviews > div.review-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+  }
 }
-
 @keyframes fillRight {
   from {
     clip-path: circle(49.7% at 51% 100%);
