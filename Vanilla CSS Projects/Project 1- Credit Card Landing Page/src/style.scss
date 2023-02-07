@@ -120,6 +120,10 @@ p.text-users {
   display: flex;
   align-items: flex-start;
 }
+.plus {
+  font-size: 2rem;
+  margin: 0 0.3em;
+}
 .decor {
   color: #f637ec;
 }
@@ -362,11 +366,17 @@ section.customizing-cards {
 }
 footer.footer {
   margin-top: 5em;
-  padding: 2em;
+  padding: 0.5em;
+  img.footer-logo {
+    margin-right: 1em;
+    width: 5em;
+  }
   nav > a {
     color: #ffffff;
     margin-right: 1em;
     text-decoration: none;
+    white-space: nowrap;
+    font-size: 0.8rem;
   }
 }
 // Breakpoint - Tablet
