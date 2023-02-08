@@ -381,121 +381,15 @@ footer.footer {
 }
 // Breakpoint - Tablet
 @media only screen and (min-width: 680px) {
-  p.text-users {
-    color: #ffffff;
-    text-align: justify;
-    width: 7em;
-    height: 3em;
-    word-spacing: 10em;
+  body {
+    margin: 0 5em;
   }
-  .wrapper {
-    padding: 1.5em 5em;
-    font-family: "Poppins", sans-serif;
-  }
-  div p.lang {
-    color: #ffffff;
-  }
-  .navbtn-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    margin: 0 15em;
-    svg.caret {
-      margin-right: 3em;
-      margin-left: 1em;
-    }
-    .nav-button {
-      background-color: rgba(255, 255, 255, 0);
-      background-image: url("../Assets/btn-pink-bg.svg");
-      background-repeat: no-repeat;
-      background-position: center left;
-      background-size: 2.8em;
-      padding-left: 1.5em;
-      border: 0;
-      color: #ffffff;
-      text-transform: capitalize;
-      font-size: 0.9rem;
-      padding: 0.5em 1em;
-      white-space: nowrap;
-      overflow: hidden;
-    }
-  }
-  .herosec-container {
-    background-image: none;
-    display: flex;
-    justify-content: space-between;
-    background-color: #151515;
-    section.hero {
-      width: 50%;
-    }
-    div.heroimg-container {
-      display: block;
-      margin-right: -5em;
-      width: 50%;
-      position: relative;
-      .reflection {
-        display: block;
-        position: absolute;
-        left: -15em;
-        width: 50vw;
-        z-index: 1;
-      }
-      .cards-img {
-        display: block;
-        width: 50vw;
-        z-index: 2;
-        position: absolute;
-        top: -1em;
-        left: -3em;
-      }
-    }
-  }
-  li img.hide-me {
-    display: none;
-  }
-  .menu-open {
-    display: none;
-  }
-  ul.menu {
-    list-style: none;
-    color: #ffffff;
-    display: flex;
-    li:first-child {
-      margin-left: 3em;
-    }
-    li {
-      margin-right: 3em;
-    }
-  }
-  nav ul {
-    display: flex;
-    align-items: center;
-    justify-content: baseline;
-  }
-  .logo-img {
-    display: block;
-    margin: 0;
-  }
-  .about-us {
-    width: 5em;
-  }
-  .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: repeat(2, 1fr);
-    justify-content: space-around;
-  }
-  section.features > .text-container {
-    display: flex;
-    gap: 2em;
-  }
-  section.reviews > div.review-container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    gap: 2em;
+  section.variants {
+    width: 78vw;
+    margin: 0 auto;
   }
 }
+
 @keyframes fillRight {
   from {
     clip-path: circle(49.7% at 51% 100%);
